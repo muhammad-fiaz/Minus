@@ -1,0 +1,40 @@
+[project]
+name = "minus"
+version = "0.1.0"
+description = "Minus is a Streamlit app that extracts audio from videos, transcribes speech, and summarizes content using Gemini API or a local LLM for clear summaries."
+requires-python = ">=3.13"
+dependencies = [
+    "streamlit>=1.45.0",
+    "transformers>=4.38.0",
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+    "torchaudio>=2.7.0",
+    "accelerate>=1.6.0",
+    "pytube",
+    "requests",
+    "pydub",
+    "ffmpeg-python",
+    "librosa",
+    "langchain>=0.3.25",
+    "yt-dlp>=2025.4.30",
+    "langchain-community>=0.3.23",
+    "google-genai>=1.14.0",
+]
+
+
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128",  marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu128",  marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[tool.uv.pip]
+python = "3.12"
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
