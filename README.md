@@ -59,7 +59,7 @@ streamlit run main.py
 
 ## Project Structure
 
-- `app.py` - Main Streamlit application
+- `Main.py` - Main Streamlit application
 - `requirements.txt` - Python dependencies
 - `README.md` - This file
 
@@ -75,8 +75,4 @@ Contributions are welcome! Please open an issue or pull request on [GitHub](http
 
 - [Streamlit](https://streamlit.io/)
 - [Gemini API](https://ai.google.dev/gemini-api/docs)
-- Open-source LLM communities
-
----
-
-**GitHub:** [https://github.com/muhammad-fiaz/Minus](https://github.com/muhammad-fiaz/Minus)
+- Open-source Hugging Face models for local LLM
