@@ -188,7 +188,7 @@ packaging==24.2
     #   transformers
 pandas==2.2.3
     # via streamlit
-pillow==11.2.1
+pillow==11.3.0
     # via
     #   streamlit
     #   torchvision
