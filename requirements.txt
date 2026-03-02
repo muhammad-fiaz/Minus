@@ -119,7 +119,7 @@ langchain==0.3.25
     #   langchain-community
 langchain-community==0.3.23
     # via minus (pyproject.toml)
-langchain-core==0.3.59
+langchain-core==1.2.11
     # via
     #   langchain
     #   langchain-community
